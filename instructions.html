@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body>
+<h1>Twenty-One Pickup</h1>
+<hr style="width: 100%; height: auto; color: #ffffff; border-style: inset; border-width: 1px; border-color: #cccccc;" />
+<h1></h1>
+<h3>Description</h3>
+<p>Twenty-One Pickup is a two-player game that starts with a pile of 21 stones.</p>
+<p>Each player takes turns removing 1, 2, or 3 stones from the pile.</p>
+<p>The player that removes the last stone wins the game.</p>
+<p>Several requirements are given for our version of the game.</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border-style: inset; border-width: 1px; border-color: #cccccc;" />
+<h3>Top-Level Pseudocode</h3>
+<ul>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Print Instructions</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Ask the user who should go first, with the option to quit</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">While the user does not quit:</span></li>
+<ul>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Create a Game object and initialize it with the starting player</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Play the game</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Show the winner</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Ask the user who should go first for the next game, with the option to quit</span></li>
+</ul>
+</ul>
+<hr style="width: 100%; height: auto; color: #ffffff; border-style: inset; border-width: 1px; border-color: #cccccc;" />
+<h3><span style="font-size: 1.17em;">Requirements</span></h3>
+<p><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">You will need to write a class called Game to control the flow of the game.</span><br />This class should have members that:</p>
+<ul>
+<li>Keep track of the current player</li>
+<li>Keep track of the number of stones on the board</li>
+</ul>
+<p>At the start and after each move the number of stones should be displayed<br />This class should have at least these member functions:</p>
+<ul>
+<li>A constructor that initializes the game with a starting player</li>
+<li>A method to start the game</li>
+<li>A function for the user's move</li>
+<ul>
+<li>Get the move from the keyboard</li>
+<li>Remove the stones from the pile</li>
+<li>Print the user's move to the console</li>
+</ul>
+<li>A function for the user's input</li>
+<ul>
+<li>Ask the user for the number of stones</li>
+<li>Validate the input is correct</li>
+<li>Return the number of stones for the move</li>
+</ul>
+<li>A function for the computer's move</li>
+<ul>
+<li>If three or fewer stone remain the computer picks them all up</li>
+<li>If more than three stones remain, try to leave the pile with a multiple of four stones (think mod)</li>
+<li>If that is not possible, remove one stone</li>
+<li>Print the computer's move to the screen</li>
+</ul>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">A method to check if the game has a winner</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">A method to display the winner to the screen</span></li>
+<li><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">A method to end the game</span></li>
+</ul>
+<hr style="width: 100%; height: auto; color: #ffffff; border-style: inset; border-width: 1px; border-color: #cccccc;" />
+<h3><span style="font-family: Verdana, Arial, Helvetica, sans-serif;" face="Verdana, Arial, Helvetica, sans-serif">Grading</span></h3>
+<p></p>
+<p>Your program will be tested for the following conditions:</p>
+<ul>
+<li>The user starts the game</li>
+<li>The computer starts the game</li>
+<li>The user inputs 1, 2, 3, and an illegal move</li>
+<li>The computer plays 1, 2, or 3 moves&nbsp;</li>
+<li>(this will be based off of the above logic)</li>
+<li>The user wins the game</li>
+<li>The computer wins the game</li>
+</ul>
+<p><span style="font-family: Verdana, Arial, Helvetica, sans-serif;" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</span></p>
+</body>
+</html>
